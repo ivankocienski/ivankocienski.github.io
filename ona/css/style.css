@@ -71,7 +71,13 @@ a.scroll-down span {
 
 #zone-1 p {
   padding-top: 2em;
-  text-align: center;
+  margin-left: 250px;
+}
+
+img#logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 /* methodology */
