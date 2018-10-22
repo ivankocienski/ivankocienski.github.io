@@ -13,14 +13,11 @@ body {
   font-size: 18px;
 }
 
-.clear {
-  clear: both;
-  height: 1px;
-  overflow: hidden;
-}
-
 .zone {
   position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .fill {
@@ -56,10 +53,53 @@ a.scroll-down span {
   display: none;
 }
 
+/* menu / logo */
+
+#menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+#menu img#logo {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+#menu:hover {
+  background-color: #494949;
+}
+
+#menu #menu-links {
+  display: none;
+}
+
+#menu:hover #menu-links {
+  display: block;
+}
+
+#menu #menu-links:hover {
+  background-color: #494949;
+  display: block;
+}
+
+#menu #menu-links a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#menu #menu-links a:hover {
+  background-color: black;
+  color: white;
+}
+
 /* about us*/
 #zone-1 {
   background-color: #404040;
-  background-image: linear-gradient(#ffffff, #404040);
+  background-image: url(/ona/img/photo-0.jpg);
 }
 
 #zone-1 .content {
@@ -67,17 +107,17 @@ a.scroll-down span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0.7;
+  padding: 1em 5em;
+  width: 50%;
+
 }
 
 #zone-1 p {
-  padding-top: 2em;
-  margin-left: 250px;
-}
-
-img#logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  text-align: center;
+  color: black;
+  opacity: 1;
 }
 
 /* methodology */
@@ -92,10 +132,16 @@ img#logo {
   grid-template-columns: auto auto auto;
   height: 90%;
   margin: auto;
+  padding-top: 1em;
 }
 
 #methodology .cell {
   position: relative;
+  overflow: hidden;
+}
+
+#methodology .method {
+  cursor: pointer;
 }
 
 #methodology .cell h2 {
@@ -111,14 +157,22 @@ img#logo {
   left: 0;
   bottom: 0;
   padding: 5px;
-  opacity: 0;
+  opacity: none;
   background-color: #4d4a45;
-  transition: opacity 0.2s;
+  display: none;
 }
 
-#methodology .method:hover .hover {
-  opacity: 1;
+#methodology .method .clicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
+
+/* #methodology .method:hover .hover {
+  opacity: 1;
+} */
 
 #methodology .method {
   background-color: #4d4a45;
@@ -145,10 +199,33 @@ img#logo {
 
 /* clients*/
 #zone-3 {
-  /* background-color: #303030; */
   background-color: #fff;
-  background-image: linear-gradient(#ffffff, #444446);
 }
+
+#clients {
+  display: grid;
+  grid-gap: 20px;
+  height: 90%;
+  margin: auto;
+  grid-template-columns: auto auto auto;
+}
+
+#clients .cell {
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*background-color: #ddd;*/
+  background-position: center;
+}
+
+#clients #client-0 { background-image: url(/ona/img/client-logo-0-renault.png); }
+#clients #client-1 { background-image: url(/ona/img/client-logo-1-ustwo.png); }
+#clients #client-2 { background-image: url(/ona/img/client-logo-2-bfi.png); }
+#clients #client-3 { background-image: url(/ona/img/client-logo-3-futurice.png); }
+#clients #client-4 { background-image: url(/ona/img/client-logo-4-tate.png); }
+#clients #client-5 { background-image: url(/ona/img/client-logo-5-haymarket.png); }
+#clients #client-6 { background-image: url(/ona/img/client-logo-6-deepmind.png); }
+#clients #client-7 { background-image: url(/ona/img/client-logo-7-fresnius.png); }
+#clients #client-8 { background-image: url(/ona/img/client-logo-8-tiff.png); }
 
 /* video */
 #zone-4 {
@@ -158,13 +235,17 @@ img#logo {
 #video {
   height: 90%;
   margin: auto;
+  background-color: #000;
 }
 
 
 /* case studies */
 #zone-5 {
-  background-color: #505050;
-  background-image: linear-gradient(#3f3f40, #fdfdfd);
+  background-color: #fff;
+}
+
+#zone-5 .fill {
+  height: 90%;
 }
 
 #case-studies {
@@ -175,23 +256,28 @@ img#logo {
 }
 
 #case-studies .cell {
-  background-color: #bcbcbd;
+  box-shadow: 8px 8px 8px #ddd;
+}
+
+#zone-5 h1 {
+  padding-top: 5px;
+  color: #000;
 }
 
 #case-studies h2 {
   text-align: center;
-  color: #786a52;
-  margin: 1em 0;
+  padding: 1em 0;
+  color: #000;
+}
+
+#case-studies p {
+  color: #000;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 #case-studies .cell .hover {
   padding: 5px;
-}
-
-/* contact us */
-#zone-6 {
-  background-color: #505050;
-  background-image: linear-gradient(#fdfdfd, #a6a6a6, #786a52);
 }
 
 .content h1 {
@@ -199,6 +285,17 @@ img#logo {
   padding: 5px;
   display: inline-block;
 }
+
+#case-studies .cell a {
+  display: block;
+  height: 50%;
+  /*background-color: #eee;*/
+}
+
+/*
+#case-studies .cell a:hover {
+  background-color: transparent;
+} */
 
 
 /* clients */
@@ -231,39 +328,68 @@ ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
 
 
 /* links */ 
-ul#links { }
-
-ul#links li {
-  float: left;
-  margin: 1em 2em 1em 0;
-}
-
-ul#links li.link {
-  background-position: center;
+#zone-6 {
+  background-color: #505050;
+  background-image: url(/ona/img/photo-1.jpg);
   background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-ul#links li a {
+#blurb {
+  padding-top: 3em;
+}
+
+#blurb p {
+  padding-top: 3em;
+  text-align: center;
+}
+
+#links {
+  position: absolute;
+  width: 1000px;
+  bottom: 7em;
+}
+
+#links .link {
   display: inline-block;
   width: 100px;
   height: 100px;
 }
 
-ul#links li#instagram { background-image: url(/ona/img/link-instagram.png); }
-ul#links li#vimeo { background-image: url(/ona/img/link-vimeo.png); }
-ul#links li#twitter { background-image: url(/ona/img/link-twitter.png); }
-
-ul#links li#copyright {
-  border-left: 1px solid #fff;
+#links .link a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-decoration: none;
 }
 
-ul#links li#copyright p {
-  height: 100px;
-  margin-left: 2em;
-  display: inline-block;
-  color: #aaa;
+#links #vimeo { margin-left: 20px; }
+#links #instagram a { background-image: url(/ona/img/link-instagram.png); }
+#links #vimeo a     { background-image: url(/ona/img/link-vimeo.png); }
+
+#links #email {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#links #email p {
+  text-align: center;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 10px;
+  width: 1000px;
+}
+
+#copyright p {
+  text-align: center;
   font-size: 0.9em;
+  opacity: 0.9;
 }
 

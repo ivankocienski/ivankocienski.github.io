@@ -1,246 +1,281 @@
 <html>
 <head>
   <title>A site</title>
-  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-  <script src='/ona/js/page.js'></script>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <!-- link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" -->
   <link href='/ona/css/style.css' type='text/css'  rel='stylesheet' />
+  <link href='/ona/css/jquery.pagepiling.css' type='text/css'  rel='stylesheet' />
+
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+  <script src='/ona/js/jquery.pagepiling.min.js'></script>
+  <script src='/ona/js/page.js'></script>
 </head>
 <body>
 
-  <!-- about us -->
-  <div id='zone-1' class='zone fill'>
-    <div class='center'>
+  <div id='zone-holder'>
 
-      <div class='content'>
-        <img id='logo' src='/ona/img/logo.png' />
+    <!-- about us -->
+    <div id='zone-1' class='zone section'>
+      <div class='fill center'>
+        <div class='content'>
 
-        <p>
-        We make human-centred films that drive insights and connect to audiences.
-        </p>
-
-        <p>
-        We teach better storytelling.
-        </p>
-
-        <p>
-        We are the <em>Office for Narrative Architectures</em>.
-        </p>
-
-      </div>
-
-      <a href='#zone-2' class='scroll-down'><span>Next</span></a>
-    </div>
-  </div>
-
-  <!-- methodology -->
-  <div id='zone-2' class='zone fill'>
-    <div class='center'>
-      <div class='content'>
-
-        <div id='methodology'>
-
-          <div id='method-0' class='cell'> 
-            <h2>Core Methods + Values</h2>
-          </div>
-
-          <div id='method-1' class='cell method'>
-            <h2>Human Centred</h2>
-
-            <div class='hover'>
-              <p>
-              Everything we do is built around trying to understand and communicate from
-              and to the human. Our experience of diverse clients and conversations means
-              that you can trust us to collaborate with you in a way that will craft and
-              deliver a wide spectrum of audience and brand-appropriate narratives.
-              First we listen, then we speak.
-              </p>
-            </div>
-          </div>
-
-          <div id='method-2' class='cell method'>
-            <h2>Bulding Motivation</h2>
-
-            <div class='hover'>
-              <p>
-              As organisations grow or shift focus it's important to bring team members
-              along with you, and allow space for reflection and conversation. We will
-              help craft concise stories so people can follow the journey, understand
-              change and want to be a part of it, meet users and watch how innovation
-              affects them, and stay excited about the future you're building.
-              </p>
-
-              <p>
-              We blend with teams, working frequently with agile and scrum.
-              </p>
-            </div>
-          </div>
-
-          <div id='method-3' class='cell method'>
-            <h2>Supportive Spaces</h2>
-
-            <!-- Comfort and Care -->
-            <div class='hover'>
-              <p>
-              Sometimes people are signed up for things that make them uncomfortable.
-              Some people have years of polished media training and other people are nervous,
-              and we get it. We will come and meet you where you are, and we will work on
-              things for as long as it takes for you to be happy and for us to have what
-              we need to tell your story. We prefer natural performances and have lots of
-              tips and tricks to get you there, but we will always work within your limits,
-              even if that means stepping away. All of us are fully CRB checked.
-              </p>
-            </div>
-          </div>
-
-          <div id='method-4' class='cell method'>
-            <h2>Discretion</h2>
-            
-            <div class='hover'>
-              <p>
-              We regularly work with organisations at the edge of innovation, so a lot of
-              what we do is bound by strict confidentiality. We also work across brands competing
-              in the same space, and so discretion is absolutely key. We'll open a discussion if
-              we think that something isn't quite right for you. We have been everywhere from
-              conflict zones to government buildings, and worked with refugees, NGOs, CEOs,
-              and heads of state.
-              </p>
-            </div>
-          </div>
-
-          <div id='method-5' class='cell method'>
-            <h2>Mediation and Narritive Design</h2>
-
-            <div class='hover'>
-              <p>
-              Storytelling is a powerful tool for communicating brands and ideas to people,
-              but it's also a really powerful tool for listening and critically analysing
-              where organisations are, and how they can do better. We believe any form of
-              spatial, social, digital or material design can learn from storytelling.
-              We regularly teach design and mediation narratives in universities, and
-              work with small groups on conflict mediation.
-              </p>
-            </div>
-          </div>
-        </div><!-- methodology -->
-
-        <a href='#zone-3' class='scroll-down'><span>Next</span></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- clients -->
-  <div id='zone-3' class='zone fill'>
-    <div class='center'>
-      <div class='content'>
-        <ul id='clients'>
-          <li id='client-10'>&nbsp;</li>
-          <li id='client-0'>&nbsp;</li>
-          <li id='client-3'>&nbsp;</li>
-          <li id='client-8'>&nbsp;</li>
-          <li id='client-4'>&nbsp;</li>
-          <li id='client-5'>&nbsp;</li>
-          <li id='client-6'>&nbsp;</li>
-          <li id='client-1'>&nbsp;</li>
-          <li id='client-2'>&nbsp;</li>
-          <li id='client-7'>&nbsp;</li>
-          <li id='client-11'>&nbsp;</li>
-          <li id='client-9'>&nbsp;</li>
-        </ul>
-
-        <a href='#zone-4' class='scroll-down'><span>Next</span></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- video -->
-  <div id='zone-4' class='zone fill'>
-    <div class='center'>
-      <div class='content'>
-        <div id='video'>
-          <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/8970192" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
           <p>
-            <a href="https://vimeo.com/8970192">Blue Abstract- Free Looping Video Background</a> from <a href="https://vimeo.com/everettbowes">Everett Bowes</a> on <a href="https://vimeo.com">Vimeo</a>.
+          We make human-centred films that drive insights and connect to audiences.<br />
+          We teach better storytelling. <br />
+          <br />
+          We are the <em>Office for Narrative Architectures</em>.
           </p>
+
         </div>
-        <a href='#zone-5' class='scroll-down'><span>Next</span></a>
       </div>
     </div>
-  </div>
 
-  <!-- case studies -->
-  <div id='zone-5' class='zone fill'>
-    <div class='center'>
-      <div class='content'>
+    <!-- methodology -->
+    <div id='zone-2' class='zone section'>
+      <div class='fill center'>
+        <div class='content'>
 
-        <div id='case-studies'>
-          <div class='cell'>
-            <h2>Brent Council</h2>
+          <div id='methodology'>
 
-            <div class='hover'>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
-              </p> 
+            <div id='method-0' class='cell'>
+              <h2>Core Methods + Values</h2>
             </div>
-          </div>
 
-          <div class='cell'>
-            <h2>ustwo</h2>
+            <div id='method-1' class='cell method'>
+              <h2>Human Centred</h2>
 
-            <div class='hover'>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
-              </p> 
+              <div class='hover'>
+                <p>
+                Everything we do is built around trying to understand and communicate from
+                and to the human. Our experience of diverse clients and conversations means
+                that you can trust us to collaborate with you in a way that will craft and
+                deliver a wide spectrum of audience and brand-appropriate narratives.
+                First we listen, then we speak.
+                </p>
+              </div>
+              <div class='clicker'>&nbsp;</div>
             </div>
-          </div>
 
-          <div class='cell'>
-            <h2>Torontol International Film Festival</h2>
+            <div id='method-2' class='cell method'>
+              <h2>Bulding Motivation</h2>
 
-            <div class='hover'>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
-              </p> 
+              <div class='hover'>
+                <p>
+                As organisations grow or shift focus it's important to bring team members
+                along with you, and allow space for reflection and conversation. We will
+                help craft concise stories so people can follow the journey, understand
+                change and want to be a part of it, meet users and watch how innovation
+                affects them, and stay excited about the future you're building.
+                </p>
+
+                <p>
+                We blend with teams, working frequently with agile and scrum.
+                </p>
+              </div>
+
+              <div class='clicker'>&nbsp;</div>
             </div>
-          </div>
 
-          <div class='cell'>
-            <h2>Alder Hey Childrens Hospital</h2>
+            <div id='method-3' class='cell method'>
+              <h2>Supportive Spaces</h2>
 
-            <div class='hover'>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
-              </p> 
+              <!-- Comfort and Care -->
+              <div class='hover'>
+                <p>
+                Sometimes people are signed up for things that make them uncomfortable.
+                Some people have years of polished media training and other people are nervous,
+                and we get it. We will come and meet you where you are, and we will work on
+                things for as long as it takes for you to be happy and for us to have what
+                we need to tell your story. We prefer natural performances and have lots of
+                tips and tricks to get you there, but we will always work within your limits,
+                even if that means stepping away. All of us are fully CRB checked.
+                </p>
+              </div>
+              <div class='clicker'>&nbsp;</div>
             </div>
-          </div>
-        </div> <!-- #case-studies -->
 
-        <!-- a href='#zone-6' class='scroll-down'><span>Next</span></a --> 
+            <div id='method-4' class='cell method'>
+              <h2>Discretion</h2>
+              
+              <div class='hover'>
+                <p>
+                We regularly work with organisations at the edge of innovation, so a lot of
+                what we do is bound by strict confidentiality. We also work across brands competing
+                in the same space, and so discretion is absolutely key. We'll open a discussion if
+                we think that something isn't quite right for you. We have been everywhere from
+                conflict zones to government buildings, and worked with refugees, NGOs, CEOs,
+                and heads of state.
+                </p>
+              </div>
+              <div class='clicker'>&nbsp;</div>
+            </div>
+
+            <div id='method-5' class='cell method'>
+              <h2>Mediation and Narritive Design</h2>
+
+              <div class='hover'>
+                <p>
+                Storytelling is a powerful tool for communicating brands and ideas to people,
+                but it's also a really powerful tool for listening and critically analysing
+                where organisations are, and how they can do better. We believe any form of
+                spatial, social, digital or material design can learn from storytelling.
+                We regularly teach design and mediation narratives in universities, and
+                work with small groups on conflict mediation.
+                </p>
+              </div>
+              <div class='clicker'>&nbsp;</div>
+            </div>
+          </div><!-- methodology -->
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- contact us -->
-  <div id='zone-6' class='zone fill'>
-    <div class='center'>
-      <div class='content'>
+    <!-- clients -->
+    <div id='zone-3' class='zone section'>
+      <div class='fill center'>
+        <div class='content'>
+          <div id='clients' class='grid'>
+            <div id='client-0' class='cell'>&nbsp;</div>
+            <div id='client-1' class='cell'>&nbsp;</div>
+            <div id='client-2' class='cell'>&nbsp;</div>
 
-        <ul id='links'>
-          <li id='instagram' class='link'><a href='#'>&nbsp</a></li>
-          <li id='vimeo' class='link'><a href='#'>&nbsp</a></li>
-          <li id='twitter' class='link'><a href='#'>&nbsp</a></li>
-          <li id='copyright'>
-            <p> Copyright &copy; 2018 Office of Narrative Architecture
-          </li>
-          <div class='clear'>&nbsp;</div>
-        </ul>
+            <div id='client-3' class='cell'>&nbsp;</div>
+            <div id='client-4' class='cell'>&nbsp;</div>
+            <div id='client-5' class='cell'>&nbsp;</div>
+
+            <div id='client-6' class='cell'>&nbsp;</div>
+            <div id='client-7' class='cell'>&nbsp;</div>
+            <div id='client-8' class='cell'>&nbsp;</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
+    <!-- video -->
+    <div id='zone-4' class='zone section'>
+      <div class='center'>
+        <div class='content'>
+          <div id='video'>
+            <div style="padding:41.88% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/152943383?autoplay=1&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- case studies -->
+    <div id='zone-5' class='zone section'>
+      <div class='fill center'>
+        <div class='content'>
+
+          <h1>Case Studies</h1>
+
+          <div id='case-studies'>
+            <div class='cell'>
+              <a href='https://vimeo.com/251363375'>
+                <h2>Brent Council</h2>
+
+                <div class='hover'>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class='cell'>
+              <a href='https://vimeo.com/241078277'>
+                <h2>ustwo</h2>
+
+                <div class='hover'>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
+                  </p> 
+                </div>
+                </a>
+            </div>
+
+            <div class='cell'>
+              <a href='https://vimeo.com/152943122'>
+                <h2>Torontol International Film Festival</h2>
+
+                <div class='hover'>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
+                  </p> 
+                </div>
+              </a>
+            </div>
+
+            <div class='cell'>
+              <a href='https://vimeo.com/279051652'>
+                <h2>Alder Hey Childrens Hospital</h2>
+
+                <div class='hover'>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate vitae nisl eget ultrices. Curabitur a dignissim dui. Aenean accumsan mi orci, et auctor magna feugiat non. Etiam efficitur, nulla vel aliquam vestibulum, ligula massa scelerisque massa, in ornare ipsum nisi ac elit. Sed pretium, erat at porttitor congue, ante urna elementum justo, sed auctor libero odio ut tellus. Aenean auctor molestie facilisis. Phasellus egestas quam non erat ultrices, eget mollis quam ullamcorper. Sed elementum fermentum nisi et sollicitudin. Aliquam lacus nunc, sagittis pulvinar neque quis, dapibus laoreet sapien. Phasellus sed iaculis nisl.
+                  </p> 
+                </div>
+              </a>
+            </div>
+          </div> <!-- #case-studies -->
+        </div>
+      </div>
+    </div>
+
+    <!-- contact us -->
+    <div id='zone-6' class='zone section'>
+      <div class='fill center'>
+        <div class='content'>
+
+          <div id='blurb'>
+            <p>
+            We work with global brands, technologists, governance, charities, artists, and architects<br />
+            to promote, showcase, persuade and explore.
+            </p>
+
+            <p>
+            We are filmmakers but we are also critical thinkers.<br />
+            We are educators, mentors, and mediators.
+            </p>
+
+            <p>
+            We are interested in asking questions about<br />
+            who we are<br />
+            and who we want to be.
+            </p>
+          </div>
+
+          <div id='links'>
+            <div id='instagram' class='link'><a href='https://www.instagram.com/onastudioldn/'>&nbsp</a></div>
+            <div id='vimeo' class='link'><a href='https://vimeo.com/onastudioldn'>&nbsp</a></div>
+            <div id='email'>
+              <p>Write to us<br /><a href='mailto:hello@ona.studio'>hello@ona.studio</a></p>
+            </div>
+          </div>
+
+          <div id='copyright'>
+            <p> Copyright &copy; 2018 Office of Narrative Architecture</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- #zone-holder -->
+
+  <div id='menu'>
+    <img id='logo' src='/ona/img/logo.png' />
+
+    <div id='menu-links'>
+      <a data-menuanchor='zone-1' href='#zone-1'>About</a>
+      <a data-menuanchor='zone-2' href='#zone-2'>Methods</a>
+      <a data-menuanchor='zone-3' href='#zone-3'>Clients</a>
+      <a data-menuanchor='zone-4' href='#zone-4'>Video</a>
+      <a data-menuanchor='zone-5' href='#zone-5'>Case studies</a>
+      <a data-menuanchor='zone-6' href='#zone-6'>Contact</a>
+    </div>
+
+    
+  </div>
 
 
 </body>
