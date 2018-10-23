@@ -53,6 +53,15 @@ a.scroll-down span {
   display: none;
 }
 
+.next {
+  width: 64px;
+  height: 64px;
+  background-image: url(/ona/img/scroll-down-arrow.png);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+
 /* menu / logo */
 
 #menu {
@@ -127,12 +136,14 @@ a.scroll-down span {
 }
 
 #methodology {
+  position: relative;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: auto auto auto;
-  height: 90%;
-  margin: auto;
-  padding-top: 1em;
+  height: 75%;
+  top: 10%;
+  /* margin: auto; */
+  /* padding-top: 1em; */
 }
 
 #methodology .cell {
@@ -156,8 +167,7 @@ a.scroll-down span {
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 5px;
-  opacity: none;
+  padding: 17px;
   background-color: #4d4a45;
   display: none;
 }
@@ -170,12 +180,8 @@ a.scroll-down span {
   right: 0;
 }
 
-/* #methodology .method:hover .hover {
-  opacity: 1;
-} */
-
 #methodology .method {
-  background-color: #4d4a45;
+  background-color: #4d4a4577;
   padding: 5px;
 }
 
@@ -188,7 +194,7 @@ a.scroll-down span {
   font-size: 0.9em;
   text-align: justify;
   margin-bottom: 1em;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 #methodology #method-0 h2 {
@@ -204,17 +210,20 @@ a.scroll-down span {
 
 #clients {
   display: grid;
-  grid-gap: 20px;
-  height: 90%;
+  grid-gap: 10px;
+  height: fit-content;
   margin: auto;
+  margin-top: 5em;
+  width: fit-content;
   grid-template-columns: auto auto auto;
 }
 
 #clients .cell {
   background-repeat: no-repeat;
   background-size: contain;
-  /*background-color: #ddd;*/
   background-position: center;
+  width: 200px;
+  height: 200px;
 }
 
 #clients #client-0 { background-image: url(/ona/img/client-logo-0-renault.png); }
@@ -337,7 +346,7 @@ ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
 }
 
 #blurb {
-  padding-top: 3em;
+  padding-top: 8em;
 }
 
 #blurb p {
