@@ -18,15 +18,24 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 .fill {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .center {
+  /*
   width: 1000px;
   margin: 0 auto;
+  */
+}
+
+@media only screen and (max-width: 600px) {
+  .center {
+    width: 100%;
+  }
 }
 
 a {
@@ -60,6 +69,7 @@ a.scroll-down span {
   position: absolute;
   bottom: 30px;
   left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /* menu / logo */
@@ -73,8 +83,8 @@ a.scroll-down span {
 
 #menu img#logo {
   margin: 10px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 #menu:hover {
@@ -108,7 +118,14 @@ a.scroll-down span {
 /* about us*/
 #zone-1 {
   background-color: #404040;
-  background-image: url(/ona/img/photo-0.jpg);
+  background-image: url(/ona/img/mob/photo-0.jpg);
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #zone-1 {
+    /* background-image: none; */
+  }
 }
 
 #zone-1 .content {
@@ -132,44 +149,28 @@ a.scroll-down span {
 /* methodology */
 #zone-2 {
   background-color: #202020;
-  background-image: linear-gradient(#454547, #756851, #fafaf9);
+  /*background-image: linear-gradient(#454547, #756851, #fafaf9);*/
 }
 
 #methodology {
-  position: relative;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: auto auto auto;
-  height: 75%;
-  top: 10%;
-  /* margin: auto; */
-  /* padding-top: 1em; */
+}
+
+@media only screen and (max-width: 600px) {
+  #methodology {
+  }
 }
 
 #methodology .cell {
-  position: relative;
-  overflow: hidden;
 }
 
 #methodology .method {
-  cursor: pointer;
 }
 
 #methodology .cell h2 {
   text-align: center;
-  width: 100%;
-  top: 50%;
-  position: absolute;
 }
 
 #methodology .method .hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 17px;
-  background-color: #4d4a45;
-  display: none;
 }
 
 #methodology .method .clicker {
@@ -181,7 +182,7 @@ a.scroll-down span {
 }
 
 #methodology .method {
-  background-color: #4d4a4577;
+  /*background-color: #4d4a4577; */
   padding: 5px;
 }
 
@@ -198,8 +199,6 @@ a.scroll-down span {
 }
 
 #methodology #method-0 h2 {
-  position: absolute;
-  top: 50%;
 }
 
 
@@ -209,13 +208,6 @@ a.scroll-down span {
 }
 
 #clients {
-  display: grid;
-  grid-gap: 10px;
-  height: fit-content;
-  margin: auto;
-  margin-top: 5em;
-  width: fit-content;
-  grid-template-columns: auto auto auto;
 }
 
 #clients .cell {
@@ -223,7 +215,8 @@ a.scroll-down span {
   background-size: contain;
   background-position: center;
   width: 200px;
-  height: 200px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 #clients #client-0 { background-image: url(/ona/img/client-logo-0-renault.png); }
@@ -242,7 +235,8 @@ a.scroll-down span {
 }
 
 #video {
-  height: 90%;
+  /* height: 90%; */
+  padding: 2em 0;
   margin: auto;
   background-color: #000;
 }
@@ -254,18 +248,19 @@ a.scroll-down span {
 }
 
 #zone-5 .fill {
-  height: 90%;
+  /* height: 90%; */
 }
 
 #case-studies {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 50% 50%;
-  height: 90%;
+  /* display: grid; */
+  /* grid-gap: 20px; */
+  /* grid-template-columns: 50% 50%; */
+  /* height: 90%; */
 }
 
 #case-studies .cell {
   box-shadow: 8px 8px 8px #ddd;
+  margin: 1em;
 }
 
 #zone-5 h1 {
@@ -307,39 +302,11 @@ a.scroll-down span {
 } */
 
 
-/* clients */
-
-ul#clients {
-  padding-top: 1em;
-  padding-bottom: 1em
-}
-
-ul#clients li {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-ul#clients li#client-0 { background-image: url(/ona/img/logo-00.png); }
-ul#clients li#client-1 { background-image: url(/ona/img/logo-01.png); }
-ul#clients li#client-2 { background-image: url(/ona/img/logo-02.png); }
-ul#clients li#client-3 { background-image: url(/ona/img/logo-03.png); }
-ul#clients li#client-4 { background-image: url(/ona/img/logo-04.png); }
-ul#clients li#client-5 { background-image: url(/ona/img/logo-05.png); }
-ul#clients li#client-6 { background-image: url(/ona/img/logo-06.png); }
-ul#clients li#client-7 { background-image: url(/ona/img/logo-07.png); }
-ul#clients li#client-8 { background-image: url(/ona/img/logo-08.png); }
-ul#clients li#client-9 { background-image: url(/ona/img/logo-09.png); }
-ul#clients li#client-10 { background-image: url(/ona/img/logo-10.png); }
-ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
-
 
 /* links */ 
 #zone-6 {
   background-color: #505050;
-  background-image: url(/ona/img/photo-1.jpg);
+  background-image: url(/ona/img/mob/photo-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -347,6 +314,7 @@ ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
 
 #blurb {
   padding-top: 8em;
+  padding-bottom: 20em;
 }
 
 #blurb p {
@@ -356,7 +324,9 @@ ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
 
 #links {
   position: absolute;
-  width: 1000px;
+  /* width: 1000px; */
+  width: 100%;
+  text-align: center;
   bottom: 7em;
 }
 
@@ -381,9 +351,12 @@ ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
 #links #vimeo a     { background-image: url(/ona/img/link-vimeo.png); }
 
 #links #email {
+  margin-top: 1em;
+  /*
   position: absolute;
   right: 0;
   top: 0;
+  */
 }
 
 #links #email p {
@@ -393,7 +366,8 @@ ul#clients li#client-11 { background-image: url(/ona/img/logo-11.png); }
 #copyright {
   position: absolute;
   bottom: 10px;
-  width: 1000px;
+  width: 100%;
+  /* width: 1000px; */
 }
 
 #copyright p {
