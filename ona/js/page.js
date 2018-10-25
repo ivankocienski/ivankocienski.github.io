@@ -1,13 +1,14 @@
 
 $(function() {
 
-  if(false) {
+  if(true) {
     // methods and values
     $('.cell .clicker').click(
       function(event) {
         console.log("clicker clicked");
 
         var target = $(event.target);
+        //target.css("background-color", "#080");
         var parent = target.parent(); 
         var child = parent.find('.hover');
         child.fadeToggle(200);

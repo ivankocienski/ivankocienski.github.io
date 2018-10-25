@@ -153,6 +153,7 @@ a.scroll-down span {
 }
 
 #methodology {
+  padding: 2em 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -161,6 +162,7 @@ a.scroll-down span {
 }
 
 #methodology .cell {
+  position: relative;
 }
 
 #methodology .method {
@@ -171,6 +173,7 @@ a.scroll-down span {
 }
 
 #methodology .method .hover {
+  display: none;
 }
 
 #methodology .method .clicker {
