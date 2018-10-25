@@ -7,11 +7,14 @@ $(function() {
       function(event) {
         console.log("clicker clicked");
 
+        $(".cell .hover").slideUp(200);
+
         var target = $(event.target);
         //target.css("background-color", "#080");
         var parent = target.parent(); 
         var child = parent.find('.hover');
-        child.fadeToggle(200);
+        //child.fadeToggle(200);
+        child.slideToggle(200);
       });
     }
 
