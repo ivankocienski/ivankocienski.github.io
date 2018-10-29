@@ -446,7 +446,7 @@ a.scroll-down span {
 
   #clients {
     display: grid;
-    grid-gap: 0px;
+    grid-column-gap: 2em;
     height: fit-content;
     margin: auto;
     /*margin-top: 5em;*/
