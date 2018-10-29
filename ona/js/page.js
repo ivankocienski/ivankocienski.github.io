@@ -1,24 +1,30 @@
 
 $(function() {
 
+  var window_width = $(window).width();
+  var window_height = $(window).height();
+  console.log("window is " + window_width + "x" + window_height + " pixels");
+
   if(true) {
     // methods and values
-    $('.cell .clicker').click(
+    $('#zone-2 .cell .clicker').click(
       function(event) {
         console.log("clicker clicked");
 
-        $(".cell .hover").slideUp(200);
-
         var target = $(event.target);
-        //target.css("background-color", "#080");
-        var parent = target.parent(); 
+        var parent = target.parent();
         var child = parent.find('.hover');
-        //child.fadeToggle(200);
+
+        // hide all the hover boxes that are open but not us
+        $("#zone-2 .cell .hover")
+          .filter((index, elm ) => { return !($(elm).is(child)) })
+          .slideUp(200);
+
         child.slideToggle(200);
       });
     }
-
-  if(false) {
+  
+  if(false) { //window_width > 1000) {
     // page scroller
     $('#zone-holder').pagepiling({
       menu: '#menu-links',
@@ -33,5 +39,6 @@ $(function() {
 
 
   console.log("page loaded");
+
 });
 

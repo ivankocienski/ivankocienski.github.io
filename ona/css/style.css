@@ -21,21 +21,8 @@ body {
   background-position: center;
 }
 
-.fill {
-  /* height: 100%; */
-}
-
 .center {
-  /*
-  width: 1000px;
-  margin: 0 auto;
-  */
-}
-
-@media only screen and (max-width: 600px) {
-  .center {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 a {
@@ -48,24 +35,15 @@ a:hover {
   text-decoration: none;
 }
 
-a.scroll-down {
-  display: block;
-  width: 64px;
-  height: 64px;
-  background-image: url(/ona/img/scroll-down-arrow.png);
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
 a.scroll-down span {
   display: none;
 }
 
 .next {
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   background-image: url(/ona/img/scroll-down-arrow.png);
+  background-size: cover;
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -122,15 +100,9 @@ a.scroll-down span {
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  #zone-1 {
-    /* background-image: none; */
-  }
-}
-
 #zone-1 .content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -149,16 +121,10 @@ a.scroll-down span {
 /* methodology */
 #zone-2 {
   background-color: #202020;
-  /*background-image: linear-gradient(#454547, #756851, #fafaf9);*/
 }
 
 #methodology {
-  padding: 2em 0;
-}
-
-@media only screen and (max-width: 600px) {
-  #methodology {
-  }
+  padding: 4em 0;
 }
 
 #methodology .cell {
@@ -170,10 +136,13 @@ a.scroll-down span {
 
 #methodology .cell h2 {
   text-align: center;
+  margin-bottom: 1em;
 }
 
 #methodology .method .hover {
   display: none;
+  margin: 1em;
+  margin-bottom: 2em;
 }
 
 #methodology .method .clicker {
@@ -185,8 +154,7 @@ a.scroll-down span {
 }
 
 #methodology .method {
-  /*background-color: #4d4a4577; */
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 #methodology .method h2 {
@@ -199,10 +167,11 @@ a.scroll-down span {
   text-align: justify;
   margin-bottom: 1em;
   line-height: 1.3em;
-  color: #ffd;
+  /* color: #ffd; */
 }
 
 #methodology #method-0 h2 {
+  margin-bottom: 2em;
 }
 
 
@@ -226,7 +195,7 @@ a.scroll-down span {
 #clients #client-0 { background-image: url(/ona/img/client-logo-0-renault.png); }
 #clients #client-1 { background-image: url(/ona/img/client-logo-1-ustwo.png); }
 #clients #client-2 { background-image: url(/ona/img/client-logo-2-bfi.png); }
-#clients #client-3 { background-image: url(/ona/img/client-logo-3-futurice.png); }
+#clients #client-3 { background-image: url(/ona/img/client-logo-3-southbank.png); }
 #clients #client-4 { background-image: url(/ona/img/client-logo-4-tate.png); }
 #clients #client-5 { background-image: url(/ona/img/client-logo-5-haymarket.png); }
 #clients #client-6 { background-image: url(/ona/img/client-logo-6-deepmind.png); }
@@ -240,15 +209,15 @@ a.scroll-down span {
 
 #video {
   /* height: 90%; */
-  padding: 2em 0;
-  margin: auto;
-  background-color: #000;
+  /* padding: 2em 0;*/
+  /* margin: auto; */
+  /* background-color: #404040; */
 }
 
 
 /* case studies */
 #zone-5 {
-  background-color: #fff;
+  background-color: #eee;
 }
 
 #zone-5 .fill {
@@ -262,43 +231,63 @@ a.scroll-down span {
   /* height: 90%; */
 }
 
+#case-studies a.banner {
+    display: block;
+    text-decoration: none;
+}
+
+
+#case-studies #ustwo .banner {
+    background-image: url(/ona/img/case-0-ustwo.jpg);
+}
+
+#case-studies #alder-hey .banner {
+    background-image: url(/ona/img/case-1-alder-hey.jpg);
+}
+
+#case-studies #tiff .banner {
+    background-image: url(/ona/img/case-2-tiff.jpg);
+}
+
+#case-studies #brent .banner {
+    background-image: url(/ona/img/case-3-brent.jpg);
+}
+
 #case-studies .cell {
   box-shadow: 8px 8px 8px #ddd;
   margin: 1em;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 #zone-5 h1 {
-  padding-top: 5px;
+  padding-top: 2em;
   color: #000;
+  margin-left: 0.5em;
 }
 
 #case-studies h2 {
   text-align: center;
-  padding: 1em 0;
-  color: #000;
+  color: #fff;
+  padding: 1.8em 0;
 }
 
 #case-studies p {
   color: #000;
   text-align: center;
   font-size: 0.9em;
+  line-height: 1.7em;
 }
 
 #case-studies .cell .hover {
-  padding: 5px;
+  padding: 20px;
 }
 
-.content h1 {
-  background-color: white;
+/*.content h1 {
   padding: 5px;
   display: inline-block;
-}
+} */
 
-#case-studies .cell a {
-  display: block;
-  height: 50%;
-  /*background-color: #eee;*/
-}
 
 /*
 #case-studies .cell a:hover {
@@ -328,7 +317,6 @@ a.scroll-down span {
 
 #links {
   position: absolute;
-  /* width: 1000px; */
   width: 100%;
   text-align: center;
   bottom: 7em;
@@ -378,5 +366,205 @@ a.scroll-down span {
   text-align: center;
   font-size: 0.9em;
   opacity: 0.9;
+}
+
+
+/*
+ * desktop style patches
+ */
+
+@media only screen and (min-width: 1000px) {
+
+  .fill {
+    height: 100%;
+  }
+
+  .center {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  #menu img#logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* about us */
+  #zone-1 {
+    background-image: url(/ona/img/photo-0.jpg);
+  }
+
+  /* methodology */
+
+  #zone-2 {
+    background-image: linear-gradient(#454547, #ffffff 80%, #fafaf9);
+  }
+
+  #methodology {
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    height: 75%;
+    top: 10%;
+    /* margin: auto; */
+    /* padding-top: 1em; */
+  }
+
+  #methodology .cell {
+    overflow: hidden;
+  }
+
+  #methodology .method {
+    cursor: pointer;
+    background-color: #4d4a4577;
+  }
+
+  #methodology .cell h2 {
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+  }
+
+  #methodology .method .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    background-color: #4d4a45;
+    margin: 0;
+  }
+  
+  #methodology #method-0 h2 {
+    margin-bottom: 0;
+    transform: translate(0, -50%);
+  }
+
+  /* clients */
+
+  #clients {
+    display: grid;
+    grid-gap: 0px;
+    height: fit-content;
+    margin: auto;
+    /*margin-top: 5em;*/
+    position:relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: fit-content;
+    grid-template-columns: auto auto auto;
+  }
+
+  #clients .cell {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* video */
+  #zone-4 .content {
+    /* background-color: #000; */
+    height: 100%;
+  }
+
+  #video {
+    position: relative;
+    height: fit-content;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  /* case studies */
+
+  #case-studies {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2em;
+    /* height: 70%;
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%); */
+  }
+
+  #case-studies a.banner h2 {
+    color: #000;
+    background-color: #ffffff44;
+  }
+
+  #case-studies a.banner:hover h2 {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  /* contact us */
+
+  #zone-6 {
+    background-image: url(/ona/img/photo-1.jpg);
+  }
+
+  #zone-6 .content {
+    height: 100%;
+  }
+  
+  #zone-6 #center {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #00000055;
+  }
+
+  #blurb {
+    padding-bottom: 3em;
+    padding-top: 1em;
+  }
+
+  #links {
+    padding-top: 1em;
+    position: static;
+    width: 600px;
+    margin: 0 auto;
+    /*width: 100%;*/
+    text-align: left;
+    /*bottom: 7em;*/
+    padding-bottom: 2em;
+  }
+
+  
+  #links .link {
+  }
+
+  #links .link:hover {
+    opacity: 0.7;
+  }
+
+  #links #vimeo {
+    /* margin-right: 10em; */
+  }
+
+  #links #email {
+    display: inline-block;
+    margin: 0px;
+    padding-top: 1em;
+    float: right;
+  }
+
+  #links #email p {
+    float: right;
+    /* display: inline-block; */
+  }
+
+  #copyright {
+    width: 1000px;
+  }
+
+  #copyright p {
+    padding: 2em 0;
+  }
+
 }
 
