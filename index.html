@@ -1,48 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Ivan Kocienski</title>
-  </head>
-  <body>
     <style>
 
-* {
-  background-color: white;
-  color: black;
-  font-family: sans-serif;
-}
+      * {
+        list-style-type: none;
+        padding: inherit;
+        margin: inherit;
+        background-color: transparent;
+        font-family: sans-serif;
+      }
 
-body {
-  font-size: 12px;
-}
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+      }
 
-#page {
-  width: 960px;
-  margin: 0 auto;
-}
+      #root {
+        width: 960px;
+        margin: 0 auto;
+      }
 
-#header h1 {
-  font-size: 4em;
-}
+      header {
+        background-color: #600;
+      }
 
+      header h1 {
+        font-size: 4em;
+        padding: 20px;
+        color: #fff;
+      }
+
+      main {
+        padding-top: 2em;
+      }
+
+      main p {
+        padding-bottom: 2em;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      ul li {
+        background-color: #fa0;
+        display: inline-block;
+        margin-right: 1em;
+      }
+
+      ul li a {
+        margin: 0;
+        display: inline-block;
+        padding: 15px;
+        
+        color: #fff;
+        font-size: 1.3em;
+        text-decoration: none;
+      }
+
+      ul li:hover  {
+        background-color: #ff8;
+      }
+
+      ul li:hover a {
+        text-decoration: underline;
+        color: #000;
+      }
     </style>
-
-
+  </head>
   <body>
-
-    <div id='page'>
-      <div id='header'>
+    <div id="root">
+      <header>
         <h1>Ivan Kocienski</h1>
-      </div>
+      </header>
 
-      <div id='contents'>
-        <p>This is the personal site of Ivan Kocienski</p>
+      <main>
+        <p>
+          This is the personal site of Ivan Kocienski, a London based developer.
+        </p>
 
-        <p><a href="https://github.com/ivankocienski">Github</a></p>
-      </div>
+        <ul id="links">
+          <li><a href="https://github.com/ivankocienski">Github</a></li>
+          <li><a href="https://twitter.com/1kocienski">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/ivan-kocienski-88a5aa32">LinkedIn</a></li>
+        </ul>
+
+      </main>
     </div>
 
     <!-- I can also write raw HTML in vim ;) -->
-
-
   </body>
 </html>
