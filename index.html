@@ -37,15 +37,17 @@
       }
 
       main {
-        padding-top: 2em;
+        padding-top: 1em;
       }
 
-      main p {
-        padding-bottom: 2em;
+      main h2 {
+        margin-top: 0.6em;
+        padding-bottom: 0.5em;
       }
 
       ul {
         padding: 0;
+        margin-bottom: 1em;
       }
 
       ul li {
@@ -72,6 +74,10 @@
         text-decoration: underline;
         color: #000;
       }
+
+      p.skills {
+        padding-top: 0;
+      }
     </style>
   </head>
   <body>
@@ -81,15 +87,30 @@
       </header>
 
       <main>
-        <p>
-          This is the personal site of Ivan Kocienski, a London based developer.
-        </p>
 
         <ul id="links">
           <li><a href="https://github.com/ivankocienski">Github</a></li>
           <li><a href="https://twitter.com/1kocienski">Twitter</a></li>
           <li><a href="https://www.linkedin.com/in/ivan-kocienski-88a5aa32">LinkedIn</a></li>
         </ul>
+
+        <p id="subline">
+          This is the personal site of Ivan Kocienski, a London based developer.
+        </p>
+
+
+        <h2>Skillset</h2>
+
+        <p class="skills">
+          Ruby, Ruby on Rails, HTML, CSS, Javascript, Typescript, NodeJS, SQL (Postgres), Redis, AMQP, Git
+        </p>
+
+        <h2>Other Skills</h2>
+
+        <p class="skills">
+          Usability, Python, Django, C++, Qt, OpenGL, GLSL
+        </p>
+
 
       </main>
     </div>
